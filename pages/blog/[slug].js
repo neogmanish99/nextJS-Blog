@@ -17,7 +17,7 @@ const postPage = ({
             <div className="card card-page">
                 <h1 className="post-title">{title}</h1>
                 <div className="post-date">Posted on {date}</div>
-                <img src={cover_image} />
+                <img src={cover_image} alt={title} />
                 <div className="post-body">
                     <div
                         dangerouslySetInnerHTML={{ __html: marked(content) }}
